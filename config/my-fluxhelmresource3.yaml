@@ -1,0 +1,10 @@
+apiVersion: integrations.flux/v1
+kind: FluxHelmResource
+metadata:
+  name: my-fluxhelmresource3
+  namespace: default
+spec:
+  customizations:
+    - name: image
+      value: "quay.io/weaveworks/byeworld:master-a000032"
+      type: string

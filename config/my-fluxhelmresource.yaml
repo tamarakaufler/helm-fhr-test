@@ -1,0 +1,20 @@
+apiVersion: integrations.flux/v1
+kind: FluxHelmResource
+metadata:
+  name: my-fluxhelmresource
+  namespace: flux
+  annotations:
+    automate: true
+    info: some  
+spec:
+  gitpath: dev
+  customizations:
+    - name: image
+      value: "quay.io/weaveworks/byeworld"
+      type: string
+    - name: image-tag
+      value: "branch-a000001"
+      type: string
+status:
+  state: good
+  message: "Hello World"
