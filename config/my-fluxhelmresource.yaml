@@ -4,7 +4,7 @@ metadata:
   name: my-fluxhelmresource
   namespace: flux
   annotations:
-    automate: true
+    automate: false
     info: some  
 spec:
   gitpath: dev
