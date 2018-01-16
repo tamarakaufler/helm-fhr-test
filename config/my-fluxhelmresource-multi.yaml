@@ -23,7 +23,7 @@
     name: chart2
     namespace: kube-system
   spec:
-    gitpath: charts
+    gitpath: configs
     customizations:
       - name: image
         value: quay.io/weaveworks/byeworld
