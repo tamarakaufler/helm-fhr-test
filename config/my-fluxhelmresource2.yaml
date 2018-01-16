@@ -9,7 +9,7 @@ spec:
       value: quay.io/weaveworks/helloworld
       type: string
     - name: image-tag
-      value: master-a000001
+      value: master-a000002
       type: string
     - name: param1
       value: "102"
