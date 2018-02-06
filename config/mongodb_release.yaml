@@ -5,9 +5,9 @@
     name: mongodb
     namespace: kube-system
     labels:
-      chart: mongodb
+      chart: charts_mongodb
   spec:
-    chartgitpath: mongodb
+    chartgitpath: charts/mongodb
     releasename: kube-system-mongodb
     customizations:
       - name: image

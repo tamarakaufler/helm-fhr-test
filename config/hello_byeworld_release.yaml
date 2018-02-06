@@ -5,9 +5,9 @@
     name: hlmhelloworld
     namespace: kube-system
     labels:
-      chart: helloworld
+      chart: charts_helloworld
   spec:
-    chartgitpath: helloworld
+    chartgitpath: charts/helloworld
     customizations:
       - name: image.repository
         value: quay.io/weaveworks/helloworld
@@ -20,9 +20,9 @@
     name: hlmbyeworld
     namespace: kube-system
     labels:
-      chart: byeworld
+      chart: charts_byeworld
   spec:
-    chartgitpath: byeworld
+    chartgitpath: charts/byeworld
     customizations:
       - name: image.repository
         value: quay.io/tamara/byeworld:master-a000003

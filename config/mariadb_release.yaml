@@ -5,9 +5,9 @@
     name: mariadb
     namespace: kube-system
     labels:
-      chart: mariadb
+      chart: charts_mariadb
   spec:
-    chartgitpath: mariadb
+    chartgitpath: charts/mariadb
     customizations:
       - name: image
         value: bitnami/mariadb:10.1.30-r1
