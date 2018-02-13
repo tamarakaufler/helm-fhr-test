@@ -5,9 +5,9 @@
     name: hlmhelloworld
     namespace: kube-system
     labels:
-      chart: charts_helloworld
+      chart: helloworld
   spec:
-    chartgitpath: charts/helloworld
+    chartgitpath: helloworld
     customizations:
       - name: image.repository
         value: quay.io/weaveworks/helloworld
