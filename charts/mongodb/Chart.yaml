@@ -10,7 +10,7 @@ keywords:
 - nosql
 maintainers:
 - email: containers@bitnami.com
-  name: Bitnami
+  name: BitnamiTest2
 name: mongodb
 sources:
 - https://github.com/bitnami/bitnami-docker-mongodb
