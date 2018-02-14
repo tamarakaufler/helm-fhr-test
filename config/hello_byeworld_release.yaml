@@ -12,7 +12,7 @@
       - name: image.repository
         value: quay.io/weaveworks/helloworld
       - name: image.tag
-        value: master-a000001
+        value: master-a000002
 ---
   apiVersion: integrations.flux/v1
   kind: FluxHelmResource
@@ -25,7 +25,7 @@
     chartgitpath: byeworld
     customizations:
       - name: image.repository
-        value: quay.io/tamara/byeworld:master-a000003
+        value: quay.io/tamara/byeworld:master-a000001
       - name: image.tag
         value: master-a000003
 
