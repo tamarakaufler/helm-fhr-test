@@ -1,29 +1,29 @@
 ---
   apiVersion: helm.integrations.flux.weave.works/v1alpha
-  kind: FluxHelmResource
+  kind: FluxHelmRelease
   metadata:
     name: hlmhelloworld
     namespace: kube-system
     labels:
       chart: helloworld
   spec:
-    chartgitpath: helloworld
-    customizations:
+    chartGitPath: helloworld
+    values:
       - name: image.repository
         value: quay.io/weaveworks/helloworld
       - name: image.tag
         value: master-a000002
 ---
   apiVersion: helm.integrations.flux.weave.works/v1alpha
-  kind: FluxHelmResource
+  kind: FluxHelmRelease
   metadata:
     name: hlmbyeworld
     namespace: kube-system
     labels:
       chart: byeworld
   spec:
-    chartgitpath: byeworld
-    customizations:
+    chartGitPath: byeworld
+    values:
       - name: image.repository
         value: quay.io/tamara/byeworld:master-a000001
       - name: image.tag
