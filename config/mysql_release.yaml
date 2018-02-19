@@ -8,7 +8,7 @@
       chart: mysql
   spec:
     chartGitPath: mysql
-    releaseName: mysql-chart
+    releaseName: kube-system-mysql
     values:
       - name: imageTag
-        value: 5.7.13
+        value: 5.7.12
