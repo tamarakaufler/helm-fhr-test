@@ -1,0 +1,14 @@
+---
+  apiVersion: helm.integrations.flux.weave.works/v1alpha
+  kind: FluxHelmRelease
+  metadata:
+    name: mysql1
+    namespace: kube-system
+    labels:
+      chart: mysql
+  spec:
+    chartGitPath: mysql
+    releaseName: mysql-chart
+    values:
+      - name: imageTag
+        value: 5.7.13
