@@ -34,7 +34,7 @@ spec:
           value: {{ default "" .Values.mongodbDatabase | quote }}
         ports:
         - name: mongodb
-          containerPort: 27018
+          containerPort: 27017
         livenessProbe:
           exec:
             command:
